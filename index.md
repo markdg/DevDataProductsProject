@@ -1,0 +1,51 @@
+---
+title       : Where the Jobs Are
+subtitle    : Data Scientist Job Openings Worldwide
+author      : Mark George
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## You Want This
+
+* You've completed the Coursera Data Science specialization
+* Now you want to find a job
+* Where are the jobs? How many? What do they pay?
+* This app helps you answer those burning questions
+
+---
+
+## What Does This App Do?
+
+* Summarizes data from thousands of advertised data scientist jobs
+* Shows total advertised job openings in major regions worldwide
+* Shows top data scientist salary ranges in the region you select
+
+---
+
+## How To Use It
+
+* Navigate to https://markdg.shinyapps.io/WhereTheJobsAre
+* Wait a few moments for app to load and render plots
+* Click radio button below salaries plot to select region to display bloxplots like this:
+
+![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png) 
+
+---
+
+## How Was It Done?
+
+* Data is fetched from careerjet.com API using a Python script
+* Total job count and 20 top paying jobs in each region are saved to files
+* R code in the app reads files and munges data
+* Currency conversion uses Yahoo Finance exchange rates fetched using quantmod package
+* Static plot of total jobs per region is created
+* Interactive boxplot of top salaries is created
+* Future (pull requests welcomed!):
+  * Drill down by region
+  * Larger job salary sample sets

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Where the Jobs Are</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Where the Jobs Are">
+  <meta name="author" content="Mark George">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Where the Jobs Are</h1>
+    <h2>Data Scientist Job Openings Worldwide</h2>
+    <p>Mark George<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>You Want This</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>You&#39;ve completed the Coursera Data Science specialization</li>
+<li>Now you want to find a job</li>
+<li>Where are the jobs? How many? What do they pay?</li>
+<li>This app helps you answer those burning questions</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>What Does This App Do?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Summarizes data from thousands of advertised data scientist jobs</li>
+<li>Shows total advertised job openings in major regions worldwide</li>
+<li>Shows top data scientist salary ranges in the region you select</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How To Use It</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Navigate to <a href="https://markdg.shinyapps.io/WhereTheJobsAre">https://markdg.shinyapps.io/WhereTheJobsAre</a></li>
+<li>Wait a few moments for app to load and render plots</li>
+<li>Click radio button below salaries plot to select region to display bloxplots like this:</li>
+</ul>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>How Was It Done?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Data is fetched from careerjet.com API using a Python script</li>
+<li>Total job count and 20 top paying jobs in each region are saved to files</li>
+<li>R code in the app reads files and munges data</li>
+<li>Currency conversion uses Yahoo Finance exchange rates fetched using quantmod package</li>
+<li>Static plot of total jobs per region is created</li>
+<li>Interactive boxplot of top salaries is created</li>
+<li>Future (pull requests welcomed!):
+
+<ul>
+<li>Drill down by region</li>
+<li>Larger job salary sample sets</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='You Want This'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='What Does This App Do?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How To Use It'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='How Was It Done?'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
